@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đào tạo Sales thực chiến ngành thực phẩm — Trịnh Công Danh</title>
+<meta name="description" content="Chương trình đào tạo in-house và cố vấn xây hệ thống bán hàng cho doanh nghiệp thực phẩm – FMCG, bởi Trịnh Công Danh, Giám đốc Kinh doanh TVP Food.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://congdanh0907-crypto.github.io/dao-tao/">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--o:#E8731A;--od:#C65C0E;--ol:#FFB26B;--cream:#FFF7EC;--cream2:#F6E7D2;--sand:#EADBC3;--ink:#2B1D12;--ink2:#5A4634;--muted:#8A7563;--ok:#2E7D4F}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,92%);margin:0 auto}
+section{padding:clamp(52px,7vw,88px) 0}
+h1,h2,h3{line-height:1.18;letter-spacing:-.01em}
+h2{font-size:clamp(1.55rem,3vw,2.15rem);font-weight:800}
+.k{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--o);margin-bottom:.6rem}
+.lead{color:var(--ink2);font-size:1.03rem;max-width:66ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:700;font-size:.97rem;transition:.2s;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-p{background:var(--o);color:#fff;box-shadow:0 10px 24px rgba(232,115,26,.28)}
+.btn-p:hover{background:var(--od);transform:translateY(-1px)}
+.btn-g{border-color:var(--ink);color:var(--ink)}
+.btn-g:hover{background:var(--ink);color:#fff}
+.todo{display:inline-block;font-size:.66rem;font-weight:700;background:#FFE3C9;color:var(--od);border:1px dashed var(--o);border-radius:6px;padding:.05rem .4rem;vertical-align:middle}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:40;background:rgba(255,247,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--sand)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.bar .name{font-weight:800}
+.bar .name span{color:var(--o)}
+.bar .btn{padding:.6rem 1.1rem;font-size:.88rem}
+
+/* hero */
+.hero{padding:clamp(56px,8vw,100px) 0 clamp(40px,6vw,72px);background:
+ radial-gradient(900px 500px at 85% 0%,#FFDDBC 0%,transparent 60%),var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2rem,4.4vw,3.3rem);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--o)}
+.hero p.sub{font-size:1.1rem;color:var(--ink2);margin:1.1rem 0 1.6rem;max-width:56ch}
+.hero .cta{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.hero .micro{font-size:.82rem;color:var(--muted);margin-top:.9rem}
+.proof{background:#fff;border-radius:22px;padding:1.6rem;border:1px solid var(--sand);box-shadow:0 16px 40px rgba(120,70,20,.10)}
+.proof .who{display:flex;gap:1rem;align-items:center;margin-bottom:1.1rem}
+.proof .av{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,var(--o),var(--ol));color:#fff;font-weight:900;display:grid;place-items:center;font-size:1.1rem;flex:none}
+.proof .who b{display:block;font-size:1.05rem}
+.proof .who small{color:var(--muted);font-size:.85rem}
+.proof ul{list-style:none}
+.proof li{padding:.55rem 0;border-top:1px solid var(--cream2);font-size:.92rem;color:var(--ink2);display:flex;gap:.6rem}
+.proof li:before{content:"✓";color:var(--ok);font-weight:800}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+
+/* logos */
+.strip{background:var(--ink);color:#fff;padding:1.3rem 0}
+.strip .wrap{display:flex;gap:1rem 2rem;flex-wrap:wrap;align-items:center;justify-content:center;font-size:.9rem}
+.strip .lbl{color:#D9C8B4;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;width:100%;text-align:center;margin-bottom:.3rem}
+.strip b{color:var(--ol);font-weight:700}
+
+/* pains */
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2rem}
+.pain{background:#fff;border-radius:18px;padding:1.4rem;border:1px solid var(--sand)}
+.pain .q{font-size:1.6rem;font-weight:900;color:var(--ol);line-height:1}
+.pain h3{font-size:1.02rem;margin:.6rem 0 .4rem}
+.pain p{font-size:.9rem;color:var(--ink2)}
+@media(max-width:860px){.pains{grid-template-columns:1fr}}
+
+/* programs */
+.alt{background:#fff}
+.progs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.prog{background:var(--cream);border-radius:20px;padding:1.6rem;border:1px solid var(--sand);display:flex;flex-direction:column}
+.prog.hl{background:var(--ink);color:#fff;border-color:var(--ink)}
+.prog.hl p,.prog.hl li{color:#E9DCCB}
+.prog .num{font-size:.75rem;font-weight:800;letter-spacing:.12em;color:var(--o)}
+.prog h3{font-size:1.2rem;margin:.4rem 0 .5rem}
+.prog .for{font-size:.84rem;color:var(--muted);margin-bottom:.8rem}
+.prog.hl .for{color:#D9C8B4}
+.prog ul{padding-left:1.1rem;font-size:.9rem;color:var(--ink2);flex:1}
+.prog li+li{margin-top:.3rem}
+.prog .dur{margin-top:1.1rem;font-size:.85rem;font-weight:600;color:var(--od)}
+.prog.hl .dur{color:var(--ol)}
+@media(max-width:860px){.progs{grid-template-columns:1fr}}
+
+/* method */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.step{position:relative;padding:1.3rem;background:#fff;border-radius:18px;border:1px solid var(--sand)}
+.step b{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--o);color:#fff;font-size:1rem;margin-bottom:.7rem}
+.step h3{font-size:.98rem;margin-bottom:.3rem}
+.step p{font-size:.86rem;color:var(--ink2)}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
+.about .frame{aspect-ratio:2/3;border-radius:26px;overflow:hidden;border:6px solid #fff;box-shadow:0 16px 40px rgba(120,70,20,.12);max-width:380px;background:#F2733A}.about .frame img{width:100%;height:100%;object-fit:cover}
+.about .frame .ini{font-size:4rem;font-weight:900;color:var(--o);line-height:1}
+.about ul{margin-top:1rem;padding-left:1.1rem;color:var(--ink2);font-size:.95rem}
+.about li+li{margin-top:.35rem}
+.quote{margin-top:1.4rem;padding:1.2rem 1.4rem;background:#fff;border-radius:16px;border:1px solid var(--sand);font-weight:600;color:var(--ink)}
+.quote small{display:block;color:var(--muted);font-weight:500;margin-top:.4rem;font-size:.82rem}
+@media(max-width:860px){.about .wrap{grid-template-columns:1fr}.about .frame{margin:0 auto}}
+
+/* faq */
+details{background:#fff;border:1px solid var(--sand);border-radius:14px;padding:1rem 1.2rem;margin-top:.7rem}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary:after{content:"+";color:var(--o);font-weight:900;font-size:1.2rem}
+details[open] summary:after{content:"–"}
+details p{margin-top:.6rem;font-size:.92rem;color:var(--ink2)}
+
+/* form */
+.reg{background:linear-gradient(160deg,#FFE7CF,var(--cream))}
+.reg .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.reg ul{list-style:none;margin-top:1.2rem}
+.reg li{padding:.5rem 0;border-bottom:1px solid var(--sand);font-size:.95rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+form{background:#fff;border-radius:22px;padding:1.6rem;box-shadow:0 16px 40px rgba(120,70,20,.12)}
+form h3{font-size:1.15rem;margin-bottom:.3rem}
+form .hint{font-size:.85rem;color:var(--muted)}
+label{display:block;font-size:.8rem;font-weight:700;color:var(--ink2);margin:.9rem 0 .3rem}
+input,select,textarea{width:100%;padding:.8rem .95rem;border:1px solid var(--sand);border-radius:12px;font-family:inherit;font-size:.95rem;background:var(--cream)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--ol);border-color:var(--o)}
+textarea{min-height:96px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+.msg{display:none;margin-top:1rem;background:#FFF1E2;border:1px solid var(--ol);border-radius:12px;padding:.9rem 1rem;font-size:.9rem;color:var(--ink2)}
+.msg.show{display:block}.msg pre{white-space:pre-wrap;font-family:inherit;margin-top:.4rem;font-size:.85rem}
+@media(max-width:860px){.reg .wrap{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:#D9C8B4;padding:1.8rem 0;font-size:.84rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+footer b{color:#fff}
+.sticky-cta{position:fixed;bottom:16px;left:0;right:0;display:none;justify-content:center;z-index:45;pointer-events:none}
+.sticky-cta .btn{pointer-events:auto}
+@media(max-width:860px){.sticky-cta{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap">
+  <a class="name" href="../">Trịnh Công <span>Danh</span></a>
+  <a class="btn btn-p" href="#dangky">Đăng ký tư vấn</a>
+</div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="k">Đào tạo in-house · Cố vấn hệ thống bán hàng · Ngành thực phẩm – FMCG</span>
+      <h1>Đội sales của anh chị <em>bán được đều</em>, không phụ thuộc vào một vài người giỏi.</h1>
+      <p class="sub">Tôi là Trịnh Công Danh, Giám đốc Kinh doanh TVP Food. Tôi huấn luyện đội ngũ kinh doanh và xây hệ thống bán hàng bằng chính những gì đang vận hành mỗi ngày trên 4 kênh GT – MT – F&B – HRC, từ nhà máy ra thị trường toàn quốc.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#dangky">Đăng ký buổi tư vấn 30 phút — miễn phí</a>
+        <a class="btn btn-g" href="#chuongtrinh">Xem 3 chương trình</a>
+      </div>
+      <p class="micro">Dành cho chủ doanh nghiệp, giám đốc/trưởng phòng kinh doanh ngành thực phẩm, F&B, phân phối. Phản hồi trong 24 giờ làm việc.</p>
+    </div>
+    <aside class="proof">
+      <div class="who">
+        <div class="av" style="overflow:hidden;padding:0"><img src="../avatar.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div><b>Trịnh Công Danh</b><small>Giám đốc Kinh doanh · TVP Food (Tân Vĩnh Phát)</small></div>
+      </div>
+      <ul>
+        <li>Hơn 18 năm sales ngành thực phẩm: đi lên từ nhân viên → giám sát → điều hành kênh GT – HRC</li>
+        <li>9 năm Giám đốc Kinh doanh TVP Food: 6 nhà phân phối, hơn 30 nhân sự phòng KD</li>
+        <li>Điều hành bán hàng 4 kênh GT – MT – F&B – HRC, địa bàn toàn quốc</li>
+        <li>Phát triển hệ thống nhà phân phối tỉnh trên toàn quốc</li>
+        <li>Trực tiếp đàm phán, triển khai khách hàng chuỗi và đối tác lớn</li>
+        <li>Chuẩn hóa 12 SOP, bộ KPI – BSC – OKR phòng kinh doanh</li>
+        <li>Ứng dụng Excel, Power BI và AI vào điều hành kinh doanh</li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<div class="strip"><div class="wrap">
+  <span class="lbl">Khách hàng & đối tác đã đồng hành cùng TVP Food</span>
+  <b>Highlands Coffee</b><b>Starbucks</b><b>Lotteria</b><b>GO!</b><b>Ông Bầu</b><b>Nutifood</b>
+</div></div>
+
+<section id="vande">
+  <div class="wrap">
+    <span class="k">Có quen không?</span>
+    <h2>Ba vấn đề tôi gặp ở hầu hết đội sales ngành thực phẩm</h2>
+    <div class="pains">
+      <div class="pain"><div class="q">01</div><h3>Doanh số phụ thuộc vào 1–2 người</h3><p>Người giỏi nghỉ là tuyến "rụng". Không có SOP, không có tuyến chuẩn, không ai biết vì sao tháng này đạt mà tháng sau không.</p></div>
+      <div class="pain"><div class="q">02</div><h3>Nhà phân phối mở nhiều, sống ít</h3><p>Chọn NPP theo cảm tính, chính sách chiết khấu không kiểm soát, tồn kho và công nợ phình ra rồi phải "cứu".</p></div>
+      <div class="pain"><div class="q">03</div><h3>Vào chuỗi lớn nhưng không có lãi</h3><p>Đàm phán thiếu chuẩn bị về giá vốn, biên lợi nhuận, điều khoản thanh toán; ký được hợp đồng nhưng dòng tiền đuối.</p></div>
+    </div>
+    <p class="lead" style="margin-top:1.6rem">Giải pháp không phải thêm người bán. Là <strong>hệ thống đo được – lặp lại được – chuyển giao được</strong>, và một đội ngũ được huấn luyện bằng tình huống thật.</p>
+  </div>
+</section>
+
+<section class="alt" id="chuongtrinh">
+  <div class="wrap">
+    <span class="k">Chương trình</span>
+    <h2>Ba cách tôi có thể giúp anh chị</h2>
+    <p class="lead" style="margin-top:.6rem">Mọi chương trình đều thiết kế riêng theo dữ liệu bán hàng thật của doanh nghiệp; có bài tập, có chỉ số đo sau đào tạo.</p>
+    <div class="progs">
+      <div class="prog">
+        <div class="num">CHƯƠNG TRÌNH 1</div>
+        <h3>Sales thực chiến 4 kênh</h3>
+        <div class="for">Cho nhân viên & giám sát bán hàng</div>
+        <ul>
+          <li>Hiểu GT – MT – F&B – HRC: khách mua gì, quyết định thế nào</li>
+          <li>Xây tuyến, mở điểm bán mới, giữ khách cũ</li>
+          <li>Kịch bản tiếp cận – trình bày – chốt đơn theo kênh</li>
+          <li>Quản lý công nợ mà vẫn giữ quan hệ</li>
+        </ul>
+        <div class="dur">2 ngày in-house + 4 tuần kèm cặp</div>
+      </div>
+      <div class="prog hl">
+        <div class="num">CHƯƠNG TRÌNH 2 · ĐƯỢC CHỌN NHIỀU</div>
+        <h3>Xây hệ thống bán hàng chạy được</h3>
+        <div class="for">Cho chủ doanh nghiệp & giám đốc kinh doanh</div>
+        <ul>
+          <li>Chẩn đoán hệ thống hiện tại trên số liệu thật</li>
+          <li>Thiết kế SOP cốt lõi, bộ KPI S1–S2–S3–S4 và BSC/OKR phòng KD</li>
+          <li>Xây chính sách thương mại, khung chiết khấu và chương trình bán hàng theo kênh; thiết lập cơ chế kiểm soát nhà phân phối trên 4 trụ cột — doanh thu & sản lượng, chi phí thương mại, công nợ & dòng tiền, danh mục khách hàng — kèm ngưỡng cảnh báo và lịch đánh giá định kỳ</li>
+          <li>Báo cáo tự động bằng Excel/Power BI/AI</li>
+        </ul>
+        <div class="dur">Cố vấn 3 tháng · 2 buổi/tháng</div>
+      </div>
+      <div class="prog">
+        <div class="num">CHƯƠNG TRÌNH 3</div>
+        <h3>Đàm phán với chuỗi & khách hàng lớn</h3>
+        <div class="for">Cho đội key account & quản lý</div>
+        <ul>
+          <li>Chuẩn bị: giá vốn, biên, điểm hòa vốn, giới hạn nhượng bộ</li>
+          <li>Đàm phán listing, promotion, điều khoản thanh toán</li>
+          <li>Xử lý khiếu nại, đổi trả, công nợ chuỗi</li>
+          <li>Đóng vai trên hợp đồng thật (đã ẩn danh)</li>
+        </ul>
+        <div class="dur">1 ngày in-house + 2 buổi coaching</div>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:1.4rem;font-size:.9rem;color:var(--muted)">Thời lượng là khung đề xuất; điều chỉnh theo quy mô đội ngũ và mục tiêu của doanh nghiệp. Học phí báo sau buổi tư vấn.</p>
+  </div>
+</section>
+
+<section id="cachlam">
+  <div class="wrap">
+    <span class="k">Cách làm việc</span>
+    <h2>Bốn bước, không lý thuyết suông</h2>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Tư vấn 30 phút</h3><p>Nghe mục tiêu, xem số liệu bán hàng hiện có, xác định điểm nghẽn lớn nhất.</p></div>
+      <div class="step"><b>2</b><h3>Chẩn đoán & đề xuất</h3><p>Bản đề xuất rõ phạm vi, nội dung, chỉ số đo, lịch triển khai và chi phí.</p></div>
+      <div class="step"><b>3</b><h3>Đào tạo trên tình huống thật</h3><p>Bài tập từ khách hàng, đơn hàng, công nợ của chính doanh nghiệp.</p></div>
+      <div class="step"><b>4</b><h3>Kèm cặp & đo kết quả</h3><p>Theo dõi KPI sau đào tạo 4–12 tuần; điều chỉnh đến khi đội tự chạy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt about" id="about">
+  <div class="wrap">
+    <div class="frame"><img src="../about.jpg" alt="Trịnh Công Danh — Giám đốc Kinh doanh TVP Food"></div>
+    <div>
+      <span class="k">Người đứng lớp</span>
+      <h2>Tôi dạy điều tôi đang làm mỗi ngày</h2>
+      <p class="lead" style="margin-top:.8rem">Giám đốc Kinh doanh Công ty TNHH TVP Food — nhà sản xuất và phân phối thực phẩm chế biến, đông lạnh (bánh mì que, toastie, pizza, hamburger, bánh quê). Tôi phụ trách chiến lược tăng trưởng, đội ngũ kinh doanh, khách hàng trọng điểm, nhà phân phối, chính sách thương mại và phối hợp vận hành.</p>
+      <ul>
+        <li>Đang hoàn thiện hệ thống quản trị kinh doanh và chuẩn hóa 12 SOP phòng kinh doanh</li>
+        <li>Dẫn dắt mục tiêu sản lượng 1.000.000 bánh mì que/tháng và mở rộng mạng lưới phân phối tỉnh toàn quốc</li>
+        <li>9 năm Giám đốc Kinh doanh TVP Food (từ 2017): xây dựng 6 nhà phân phối, quản trị hơn 30 nhân sự phòng kinh doanh</li>
+        <li>Cử nhân Đại học Tài chính – Marketing; các khóa CCO, Master Sales, thuyết trình, đàm phán, xây dựng đa điểm chạm</li>
+      </ul>
+      <div class="quote">"Sales giỏi không phải người nói hay nhất, mà là người làm cho khách hàng mua lại lần thứ hai và nhà phân phối muốn làm tiếp năm sau."<small>— Trịnh Công Danh</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="k">Câu hỏi thường gặp</span>
+    <h2>Trước khi anh chị đăng ký</h2>
+    <details><summary>Doanh nghiệp tôi không làm bánh/thực phẩm đông lạnh, có phù hợp không?</summary><p>Phù hợp nếu anh chị bán qua điểm bán lẻ, siêu thị, nhà hàng – cà phê, suất ăn hoặc qua nhà phân phối. Cách xây tuyến, quản lý NPP, công nợ và đàm phán chuỗi là chung cho ngành thực phẩm – FMCG; ví dụ sẽ lấy từ ngành của anh chị.</p></details>
+    <details><summary>Đội tôi chỉ có 3–5 nhân viên, có đào tạo được không?</summary><p>Được. Đội nhỏ càng cần hệ thống sớm. Chương trình 1 và 3 chạy tốt từ 5 người; Chương trình 2 làm việc trực tiếp với chủ doanh nghiệp.</p></details>
+    <details><summary>Cần chuẩn bị dữ liệu gì cho buổi tư vấn?</summary><p>Doanh thu 6–12 tháng theo nhân viên/khách hàng, danh sách NPP (nếu có), báo cáo công nợ gần nhất. Không có cũng không sao — ta bắt đầu từ chỗ đang có.</p></details>
+    <details><summary>Anh Danh đang là Giám đốc Kinh doanh TVP Food, có xung đột lợi ích không?</summary><p>Tôi không nhận đào tạo/cố vấn cho đơn vị cạnh tranh trực tiếp với TVP Food và không chia sẻ dữ liệu nội bộ của bất kỳ bên nào. Mọi ví dụ đều được ẩn danh.</p></details>
+    <details><summary>Có nhận mời diễn giả hội thảo, chia sẻ nội bộ 2–3 giờ không?</summary><p>Có. Ghi rõ nhu cầu trong form bên dưới, tôi sẽ đề xuất chủ đề phù hợp.</p></details>
+  </div>
+</section>
+
+<section class="reg" id="dangky">
+  <div class="wrap">
+    <div>
+      <span class="k">Đăng ký</span>
+      <h2>Buổi tư vấn 30 phút — miễn phí, không ràng buộc</h2>
+      <p class="lead" style="margin-top:.8rem">Điền thông tin, tôi hoặc trợ lý sẽ liên hệ qua email/Zalo trong 24 giờ làm việc để hẹn lịch (trực tiếp tại TP.HCM hoặc online).</p>
+      <ul>
+        <li><b>Email</b><span>congdanh0907@gmail.com</span></li>
+        <li><b>Khu vực</b><span>TP.HCM · Toàn quốc · Online</span></li>
+      </ul>
+    </div>
+    <form id="f">
+      <h3>Thông tin đăng ký</h3>
+      <div class="hint">Mất khoảng 1 phút.</div>
+      <div class="row">
+        <div><label>Họ tên *</label><input name="name" required placeholder="Nguyễn Văn A"></div>
+        <div><label>Chức vụ</label><input name="title" placeholder="Giám đốc / Trưởng phòng KD"></div>
+      </div>
+      <label>Doanh nghiệp *</label><input name="org" required placeholder="Công ty / Thương hiệu">
+      <div class="row">
+        <div><label>Số điện thoại / Zalo *</label><input name="phone" required placeholder="09xx xxx xxx"></div>
+        <div><label>Email</label><input name="email" type="email" placeholder="email@congty.com"></div>
+      </div>
+      <div class="row">
+        <div><label>Quy mô đội sales</label><select name="size"><option>1–5 người</option><option>6–15 người</option><option>16–40 người</option><option>Trên 40 người</option></select></div>
+        <div><label>Quan tâm</label><select name="need"><option>CT1 · Sales thực chiến 4 kênh</option><option>CT2 · Xây hệ thống bán hàng</option><option>CT3 · Đàm phán chuỗi & KH lớn</option><option>Mời diễn giả / chia sẻ nội bộ</option><option>Chưa rõ, cần tư vấn</option></select></div>
+      </div>
+      <label>Điểm nghẽn lớn nhất hiện nay</label><textarea name="pain" placeholder="Ví dụ: doanh số lệ thuộc 2 nhân viên; NPP tỉnh mở rồi ngưng; công nợ chuỗi kéo dài…"></textarea>
+      <div style="margin-top:1.1rem;display:flex;gap:.7rem;flex-wrap:wrap">
+        <button class="btn btn-p" type="submit">Gửi đăng ký</button>
+        <button class="btn btn-g" type="button" id="cp" style="display:none">Sao chép nội dung</button>
+      </div>
+      <div class="msg" id="msg"></div>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div><b>Trịnh Công Danh</b> · Giám đốc Kinh doanh TVP Food · Đào tạo Sales thực chiến</div>
+  <div>© <span id="yr"></span> · congdanh0907@gmail.com</div>
+</div></footer>
+
+<div class="sticky-cta"><a class="btn btn-p" href="#dangky">Đăng ký tư vấn miễn phí</a></div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+// Không có máy chủ nhận form: tạo nội dung để khách gửi qua Zalo/email. Khi có Google Form/CRM, thay FORM_URL.
+const FORM_URL='';
+const f=document.getElementById('f'),msg=document.getElementById('msg'),cp=document.getElementById('cp');let txt='';
+f.addEventListener('submit',e=>{
+  e.preventDefault();const d=new FormData(f);
+  if(FORM_URL){location.href=FORM_URL;return;}
+  txt=`ĐĂNG KÝ TƯ VẤN — gửi tới congdanh0907@gmail.com
+Họ tên: ${d.get('name')} (${d.get('title')||'—'})
+Doanh nghiệp: ${d.get('org')}
+Điện thoại/Zalo: ${d.get('phone')} · Email: ${d.get('email')||'—'}
+Quy mô đội sales: ${d.get('size')}
+Quan tâm: ${d.get('need')}
+Điểm nghẽn: ${d.get('pain')||'—'}`;
+  msg.innerHTML='<b>Cảm ơn anh chị.</b> Hãy sao chép nội dung dưới đây và gửi qua Zalo hoặc email <b>congdanh0907@gmail.com</b> — tôi phản hồi trong 24 giờ làm việc.<pre>'+txt.replace(/</g,'&lt;')+'</pre>';
+  msg.classList.add('show');cp.style.display='inline-flex';msg.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+cp.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(txt);cp.textContent='Đã sao chép ✓';}catch(e){cp.textContent='Bôi đen & copy thủ công';}});
+</script>
+</body>
+</html>
